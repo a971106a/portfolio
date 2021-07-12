@@ -1,5 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require("path");
+
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ]
-}
+  outputDir: path.resolve(__dirname, "./docs"),
+  // assetsDir: "./static/SPA",
+  transpileDependencies: ["vuetify"]
+  // publicPath: "/vue-test/"
+};
